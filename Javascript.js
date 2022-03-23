@@ -1,6 +1,14 @@
 console.log("Hello World");
 
 function ShowProf() {
-document.querySelector('.ShowAca, .ShowPer').style.display = 'none';
+document.querySelector('.ShowAca', '.ShowPer').style.display = 'none';
 }
-s
+
+
+function ShowAll() {
+document.querySelector('.ShowAca').style.display = 'block';
+}
+
+const x = document.getElementById('ShowAca')
+console.log(x);
+
