@@ -1,0 +1,43 @@
+body {
+background-image: linear-gradient(blue, deepskyblue, white);
+}
+
+.Top {
+margin-bottom: 0;
+text-align: center;
+padding-bottom: 30px;
+color: white;
+}
+
+.Main {
+margin-top: 0;
+}
+
+.Name {
+font-size: 30px;
+padding: 25px;
+margin-bottom: 0;
+}
+
+.Subtitle {
+padding: 20px;
+font-size: 25px;
+margin-bottom: 30;
+margin-top: 0;
+}
+
+.Navis {
+width: 300px;
+padding: 20px;
+cursor: pointer;
+background-color: gray;
+text-align: center;
+color: white;
+font-size: 20px;
+margin-left: 5px;
+}
+
+.Section {
+font-size: 30px;
+text-align: center;
+}
