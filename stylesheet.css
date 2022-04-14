@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+body {
+    margin:0px;
+    padding:0px;
+    text-align:center;
+}
+
+.content{
+    overflow:hidden;
+}
+
+#contact {
+    display:flex;
+    }
+
+#contact {
+    text-align:left;
+    color:white;
+}
+
+#contact a{
+    padding-right:20px;
+}
+
+header  {
+    background: linear-gradient(darkorange, blue);
+    border-bottom: darkorange 10px solid;
+    border-radius:0 0 15px 15px;
+    position:sticky;
+    top:0;
+}
+
+.title h1{
+    color:white;
+}
+
+header li{
+    display:inline;
+    padding: 0 20px 0 20px;
+}
+
+.clickme{
+    cursor:pointer;
+    width:200px;
+    padding:20px;
+    font-size:20px;
+    color:blue;
+    background-color:violet;
+}
+
+#professional{
+    padding:40px 0 50px 0px;
+}
+
+#professional h3{
+    font-size:25px;
+}
+
+#professional .prof{
+    float:left;
+    width:30%;
+    margin-left:23px;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+#academic h3{
+    font-size:25px;
+}
+
+.qual{
+    display:flex;
+}
+
+.qual ul{
+    margin:auto;
+    text-align:left;
+    font-size:20px;
+}
+
+#personal{
+    padding:50px 0 10px 0;
+}
+
+#personal h3{
+    font-size:25px;
+}
+
+#personal .pers{
+    float:left;
+    width:30%;
+    margin-left:23px;
+    padding-left:20px;
+    padding-right:20px;
+    font-size:20px;
+}
+
+footer {
+    border-top:orange 5px solid;
+    border-radius:15px 15px 0 0;
+    background:linear-gradient(blue, orange);
+    color:white;
+}
