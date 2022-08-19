@@ -1,0 +1,227 @@
+:root {
+    --menu-speed: 0.50s;
+}
+
+body {
+    background-image: url(Dude.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.wrap .toggler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 5vw;
+    height: 92.5px;
+    opacity: 0;
+}
+
+.wrap .burger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 70px;
+    height: 92.5px;
+    padding: 1rem;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap .burger > div {
+    position: relative;
+    flex: none;
+    width: 100%;
+    height: 2px;
+    background: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.wrap .burger > div::before,
+.wrap .burger > div::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+}
+
+.wrap .burger > div::after {
+    top: 10px;
+}
+
+.wrap .menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.wrap .menu > div {
+    background-color: black;
+    width: 10vw;
+    height: 200vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    transform: scale(0);
+    transition: all 0.4s ease;
+}
+
+.wrap .menu > div > div {
+    text-align: left;
+    left: 0;
+    max-width: 25vw;
+    max-height: 100vh;
+    opacity: 0;
+}
+
+.wrap .menu > div > div > ul > li {
+    list-style: none;
+    font-family: Verdana;
+    color: #ffff;
+    font-size: 1.2rem;
+    padding: 1.2rem;
+}
+
+.wrap .menu > div > div > ul > li > a {
+    color: inherit;
+    transition: color 0.4s ease;
+}
+
+.wrap .toggler:checked + .burger > div {
+    transform: rotate(135deg);
+}
+
+.wrap .toggler:checked + .burger > div:before,
+.wrap .toggler:checked + .burger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+.wrap .toggler:checked ~ .menu {
+    visibility: visible;
+}
+
+.wrap .toggler:checked ~ .menu > div {
+    transform: scale(1);
+    transition-duration: var(--menu-speed);
+}
+
+.wrap .toggler:checked ~ .menu > div > div {
+    opacity: 1;
+    transition: opacity 0.4s ease 0.4s;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    background-color: #ffff;
+    border-bottom: black solid 0.4px;
+}
+
+header h1 {
+    margin-top: -30px;
+    color: red;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#contact  {
+    display: flex;
+    align-items: center;
+    justify-content: right; 
+}
+
+#contact a {
+    padding-left: 20px;
+}
+
+#filler {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10vw;
+    margin-right: 40vw;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h3 {
+    margin-left: 20px;
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+
+#filler p {
+    overflow-wrap: break-word;
+}
+
+#prof, #acad, #pers {
+    display: none;
+}
+
+#prof, #acad, #pers {
+    overflow-wrap: break-word;
+    margin-left: 10vw;
+    margin-right: 40vw;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#prof {
+    flex-direction: column;
+}
+
+#prof h3 {
+    margin: 0;
+    padding: 0;
+}
+
+#prof h4 {
+    margin: 0;
+    padding: 0;
+}
+
+#prof p {
+    margin: 0;
+    padding: 0;
+}
+
+#acad {
+    flex-direction: column;
+}
+
+#acad ul {
+    margin: 0;
+    padding: 0;
+}
+
+#pers {
+    flex-direction: column;
+}
+
