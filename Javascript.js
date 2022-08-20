@@ -1,4 +1,3 @@
-console.log('Hello World');
 
 const Zero = document.querySelector('#filler');
 const One = document.querySelector('#prof');
