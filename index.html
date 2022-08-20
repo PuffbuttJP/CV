@@ -1,105 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width">
-    <meta name="author" content="JP Barker">
-    <title>JP Barker CV</title>
-    <link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="stylesheet.css">
+<title>JP Barker CV</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scaleable=1.0">
 </head>
 <body>
-<header>
-    <div>
-    <div id="contact">
-        <h3>Contact:</h3>
+    <header>
+        <div class="wrap">
+            <input type="checkbox" class="toggler">
+            <div class="burger"><div></div></div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a onclick="showFill()" href="#">Home</a></li>
+                            <li><a onclick="showProf()" href="#">Professional</a></li>
+                            <li><a onclick="showAcad()" href="#">Academic</a></li>
+                            <li><a onclick="showPers()" href="#">Personal</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <p>Contact: </p>
+            <a href="tel: 00447923111382">Phone</a>
             <a href="mailto: jp.barker@live.co.uk">Email</a>
-            <a href="tel:07923111382">Phone</a>
-    </div>
-    <div id="title">
-        <h1>Jon-Paul Barker</h1>
-        <p>I promise this page <i>will</i> get better</p>
-        <img src="https://static.wikia.nocookie.net/villains/images/1/12/Mr_frog.png/revision/latest?cb=20220119060633">
-    </div>
-    <div id="navi">
-        <nav>
-         <ul>
-             <li><button class="press" onclick="showProf">Professional</button></li>
-             <li><button class="press" onclick="showAcad">Academic</button></li>
-             <li><button class="press" onclick="showPers">Personal</button></li>
-             <li><button class="press" onclick="showAll">Show All</button></li>
-         </ul>
-        </nav>
-    </div>
-</header>
-
-<section id="professional" class="content">   
-    <div class="prof">
-        <img src="https://static.wikia.nocookie.net/villains/images/1/12/Mr_frog.png/revision/latest?cb=20220119060633">
-        <h3>Newcastle Building Society</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel velit qui dolorum commodi sit magnam iusto unde, nihil placeat eligendi asperiores eveniet natus delectus soluta eos corrupti reprehenderit necessitatibus possimus!</p>
-    </div>
-    <div class="prof">
-        <img src="https://static.wikia.nocookie.net/villains/images/1/12/Mr_frog.png/revision/latest?cb=20220119060633">
-        <h3>G4S Utility Services</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laudantium veritatis aperiam impedit fugit quod magnam a, dolor nostrum recusandae atque, alias soluta exercitationem eius, perspiciatis dignissimos ea quo iure.</p>
-    </div>
-    <div class="prof">
-        <img src="https://static.wikia.nocookie.net/villains/images/1/12/Mr_frog.png/revision/latest?cb=20220119060633">
-        <h3>Newcastle Law Centre</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nisi quae, tenetur accusamus quos eum, consectetur dolor repellendus sed dolorum eius modi perferendis, quasi ratione necessitatibus consequatur magnam. Alias, pariatur.</p>
-    </div>
-</section>
-
-<section id="academic" class="content">
-    <div class="acad">
-        <h3>A-Level</h3>
-        <div class="qual">
-            <ul>
-             <li>English Language: B</li>
-             <li>English Literature: C</li>
-             <li>Media Studies: D</li>
-            </ul>
         </div>
-    </div>
-    <div class="acad">
-        <h3>GSCS</h3>
-        <div class="qual">
-            <ul>
-                <li>English Literature: A*</li>
-                <li>English Language: B</li>
-                <li>Science: BB</li>
-                <li>Mathematics: B</li>
-                <li>French: C</li>
-                <li>Performing Arts: D</li>
-                <li>Business Studies: A</li>
-            </ul>
-        </div>
-    </div>
-    <div class="acad">
-        <h3>Other</h3>
-    </div>
-</section>
-
-<section id="personal" class="content">
-    <div class="pers">
-        <h3>Hobby 1</h3>
-        <img src="https://static.wikia.nocookie.net/villains/images/1/12/Mr_frog.png/revision/latest?cb=20220119060633">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ipsa architecto quod cupiditate magni aut blanditiis dolor eveniet corporis veritatis harum dolore eligendi quos, tempora, itaque veniam maiores pariatur? Cupiditate.</p>
-    </div>
-    <div class="pers">
-        <h3>Hobby 2</h3>
-        <img src="https://static.wikia.nocookie.net/villains/images/1/12/Mr_frog.png/revision/latest?cb=20220119060633">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A reprehenderit adipisci soluta eligendi officiis voluptates dolorum quae eius laudantium cupiditate fugit necessitatibus mollitia, unde magnam nobis autem incidunt. At, et.</p>
-    </div>
-    <div class="pers">
-        <h3>Hobby 3</h3>
-        <img src="https://static.wikia.nocookie.net/villains/images/1/12/Mr_frog.png/revision/latest?cb=20220119060633">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel exercitationem ex veritatis quaerat dolor aperiam maiores laborum, a veniam quis et. Sed quidem, omnis laudantium officiis dicta nemo eligendi natus?</p>
-    </div>
-</section>
-
-<footer>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti laudantium veritatis magnam dicta nesciunt, tempora, eaque molestiae eum impedit tempore architecto accusamus delectus maxime eligendi. Necessitatibus ab dolore asperiores veritatis.</p>
-</footer>
+        <h1>JP &nbsp;<span style="color:black"> Barker</span></h1>
+    </header>
+    <section id="filler">
+        <h3>Welcome</h3>
+        <p>I'm a junior web developer based in the UK.</p>
+        <p>My knowledge base includes:</p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>VBA (please, <i>please</i>, don't make me use VBA)</li>
+        </ul>
+        <div></div>
+    </section>
+    <section id="prof">
+        <h3>Professional</h3>
+        <h4>Newcastle Building Society - Customer Service Advisor</h4>
+        <p>Sept. 2016 - Present</p>
+        <ul>
+            <li>Adapted paper-based processes to digital alternatives so that the business could effectively operate during COVID. </li>
+            <li>Performed research and rolled out training to other members of staff in preparation for the FCA's Strong Customer Authentication rollout.</li>
+            <li>Managing the movement and validation of XML documents via an industry-wide database.</li>
+        </ul>
+        <h4>G4S Utility Services - Administrative Assistant</h4>
+        <p>Aug 2012 - Aug 2016</p>
+        <ul>
+            <li>Assisted field engineers with managing their workload and addressing emergency outages across the country. </li>
+            <li>Helped plan and attended bootcamp for outsourcing clients to help them better understand our processes and to collect feedback.</li>
+            <li>Ran and adapted basic SQL queries, according to a internally-managed framework.</li>
+        </ul>
+        <h4>Newcastle Law Centre - Legal Secretary</h4>
+        <p>Sept 2010 - Apr 2012</p>
+        <ul>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+        </ul>
+    </section>
+    <section id="acad">
+        <h3>Academic</h3>
+        <h4>A-Level - Queen Alexandra College</h4>
+        <ul>
+            <li>English Literature - B</li>
+            <li>Media Studies - C</li>
+            <li>English Language - D</li>
+        </ul>
+        <h4>GSCE - John Spence Community High School</h4>
+        <ul>
+            <li>Mathematics - B</li>
+            <li>English Literature - A*</li>
+            <li>English Language - A</li>
+            <li>Science - C</li>
+            <li>French - C</li>
+            <li>Religious Studies - C</li>
+            <li>Expressive Arts - D</li>
+        </ul>
+        <h4>Other Qualifications</h4>
+        <ul>
+            <li>Business Studies - GNVQ - Distinction</li>
+            <li>Business and Administration - EDI Level 2 NVQ</li>
+        </ul>
+    </section>
+    <section id="pers">
+        <h3>Personal</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis placeat, excepturi ad magni veniam quas aperiam nisi quis fugit animi asperiores beatae possimus quaerat mollitia sapiente a magnam alias doloribus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, amet nesciunt. Consequatur quis laboriosam soluta dolorem. Eaque enim perspiciatis quibusdam dolore. Blanditiis commodi quis modi perspiciatis impedit rem dolore neque.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum esse accusamus, veniam error magni eveniet, reiciendis rerum labore, nobis maxime a laudantium blanditiis in dolor. Sapiente earum nihil sunt. Temporibus!</p>
+    </section>
+<script src="Javascript.js"></script>
 </body>
-<script src="main.js"></script>
-</html>
